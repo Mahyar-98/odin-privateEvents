@@ -1,0 +1,5 @@
+<h1>User <%= @user.id %></h1> 
+<h2>This user has created the following events:</h2>
+<% @user.created_events.each |event| do %>
+<ul><li><%= event.date %> - <%= event.location %></li></ul>
+<% end %>
